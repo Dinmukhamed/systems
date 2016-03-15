@@ -7,7 +7,7 @@
 
 """This script is for the automatic and repetitive backup of git branches
 
-You need to copy paste this code to a folder outside 
+You need to copy paste this code to a folder outside
 the local git repo, then run in terminal python backup.py
 Follow the input prompts in the terminal and specify the paths
 of git repo and the location of backup.
@@ -69,7 +69,7 @@ for bn in branchname:
     cmd3 = 'cp -r %s %s' % (fppath, backuppath)
     subprocess.call(cmd3, shell=True)
 
-# Optional: Bare git repo backup of your entire local git repo. 
+# Optional: Bare git repo backup of your entire local git repo.
 # Uncomment for usage. cmd_b1 should be pointing to the directory
 # immediately above the local git repo to be backed up.
 # Also change nameofyourgitrepo to the actual name of your git repo.
